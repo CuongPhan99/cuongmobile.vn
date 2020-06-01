@@ -18,25 +18,44 @@
 								<table class="table table-bordered" style="margin-top:20px;">				
 									<thead>
 										<tr class="bg-primary">
-                                            <th width="10%">ID</th>
-                                            <th width="15%">Ngày lập HĐ</th>                                            
-											<th width="10%">Người đặt hàng</th>
-											<th width="20%">Tên sản phẩm</th>
-                                            <th width="5%">Số lượng </th>
-                                            <th width="10%">Tổng tiền </th>
-											<th width="15%">Trạng Thái</th>
-											<th width="15%">Tùy chọn</th>
+                                            <th width="5%">ID</th>
+                                                                                       
+											<th width="13%">Người đặt hàng</th>
+											<th width="10%">SĐT</th>
+                                            <th width="15%">Địa chỉ </th>
+											<th width="23%">Sản phẩm </th>
+											<th width="12%">Tổng tiền</th> 
+											<th width="10%">Trạng Thái</th>
+											<th width="12%">Tùy chọn</th>
 										</tr>
 									</thead>
 									<tbody>		
 									@foreach($orderlist as $order)			
 										<tr>
 											<td>{{$order->or_id}}</td>
-											<td>{{$order->created_at}}</td>
 											<td>{{$order->or_name}}</td>
-                                            <td>{{$order->prod_name}}</td>                                          
-                                            <td>{{$order->od_quantity}}</td>
-                                            <td>{{number_format($order->od_price,0,',','.')}}</td>
+                                            <td>{{$order->or_phone}}</td>                                          
+											<td>{{$order->or_address}}</td>
+											<td>
+												@foreach($chitiet as $tam)
+													@if($tam->od_id == $order->or_id)
+														<p>{{$tam->prod_name}} - {{$tam->od_quantity}} cái</p>
+													@endif
+												@endforeach
+											</td>
+											<td>
+												@php
+													$tong = 0;
+												@endphp
+												@foreach($chitiet as $tam)
+													@if($tam->od_id == $order->or_id)
+														@php
+															$tong = $tong + $tam->od_price;
+														@endphp
+													@endif	
+												@endforeach
+												{{number_format($tong,0,',','.')}} VND
+											</td>
                                             <td> 
                                                 @if($order->or_status=='0')
                                                     Chưa xử lý

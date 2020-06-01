@@ -78,9 +78,8 @@ Route::group(['namespace'=>'Admin'],function() {
                 Route::get('add','UserController@getAddUser');
                 Route::post('add','UserController@postAddUser');
 
-                Route::get('edit/{id}','UserController@getEditUser');
-                Route::post('edit/{id}','UserController@postEditUser');
-
+                Route::get('see/{id}','UserController@getSeeUser');
+          
                 Route::get('delete/{id}','UserController@getDeleteUser');
             });
             Route::group(['prefix' => 'order'], function () {

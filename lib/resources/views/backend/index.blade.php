@@ -30,8 +30,8 @@
 							<svg class="glyph stroked empty-message"><use xlink:href="#stroked-empty-message"></use></svg>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">{{$comment_count}}</div>
-							<div class="text-muted">Bình luận</div>
+							<div class="large">{{$order_count}}</div>
+							<div class="text-muted">Đơn hàng</div>
 						</div>
 					</div>
 				</div>

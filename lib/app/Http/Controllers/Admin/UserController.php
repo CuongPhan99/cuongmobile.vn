@@ -30,22 +30,11 @@ class UserController extends Controller
         $user->save();
         return back();
     }
-    public function getEditUser($id){
+    public function getSeeUser($id){
         $data['user'] = User::find($id);
-        return view('backend.edituser',$data);
+        return view('backend.seeuser',$data);
     }
-    public function postEditUser(Request $request,$id){
-        $user = new User;
-        $arr['name'] = $request->name;
-        $arr['sex'] = $request->sex;
-        $arr['phone'] = $request->phone;
-        $arr['address'] = $request->address;
-        $arr['email'] = $request->email;
-        $arr['password'] = $request->password;
-        $arr['level'] = $request->level;
-        $user::where('id',$id)->update($arr);
-        return redirect('admin/user');
-    }
+  
     public function getDeleteUser($id){
         User::destroy($id);
         return back();

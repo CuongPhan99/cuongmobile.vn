@@ -37,7 +37,7 @@
 											<td>{{$user->phone}}</td>
 											<td>{{$user->address}}</td>
 											<td>
-												<a href="{{asset('admin/user/edit/'.$user->id)}}" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i> Sửa</a>
+												<a href="{{asset('admin/user/see/'.$user->id)}}" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i> Xem</a>
 												<a onclick="return confirm('Bạn có chắc chắn muốn xóa!')" href="{{asset('admin/user/delete/'.$user->id)}}" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i> Xóa</a>
 											</td>
 										</tr>	

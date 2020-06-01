@@ -13,12 +13,9 @@ class OrderController extends Controller
 {
     //
     public function getOrder(){
-        $data['orderlist'] = DB::table('mc_order')
-        ->join('mc_orderdetail','mc_order.or_id','=','mc_orderdetail.od_id')
-        ->join('mc_products','mc_products.prod_id','=','mc_orderdetail.prod_id')
-        ->select('mc_order.*', 'od_quantity', 'prod_name','od_price')
-        ->orderBy('or_id','desc')
-        ->get();
+        $data['orderlist'] = DB::select('select * from mc_order');
+        $data['chitiet'] = DB::select('select * from mc_orderdetail a, mc_products b where a.prod_id=b.prod_id');
+        // dd($data);
         return view('backend.order',$data);
  
     }  
