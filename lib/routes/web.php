@@ -32,7 +32,7 @@ Route::group(['prefix' => 'signup'], function (){
     Route::post('/','FrontendController@postSignUp');
 });
 
-Route::group(['prefix' => 'cart'], function () {
+Route::group(['prefix' => 'cart','middleware'=>'CheckSignOut'], function () {
     Route::get('add/{id}','CartController@getAddCart');
     Route::get('show','CartController@getShowCart');
     Route::get('delete/{id}','CartController@getDeleteCart');

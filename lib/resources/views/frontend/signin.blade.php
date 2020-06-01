@@ -8,7 +8,7 @@
 	<title>CườngMobile Shop - @yield('title')</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/signup.css">
+  <link rel="stylesheet" href="css/login.css">
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -52,7 +52,7 @@
 							<div id="search input">
 								<input type="text" class="form-control" placeholder="Search" name="result">
 							</div>
-							<div id="search input" style="margin-top: 29px;">
+							<div id="search-input" style="margin-top: 20px;">
 								 <button class="btn btn-default" input type="submit"><i class="fa fa-search"></i></button>
 							</div>
 							<div id=login>
