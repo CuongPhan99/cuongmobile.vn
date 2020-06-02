@@ -8,7 +8,7 @@ body{
 	color: #666;
 }
 #header{
-	background: #FF9600;		
+	background: #1e8e04;		
 }
 #logo, #search, #cart{
 	height: 98px;
@@ -39,10 +39,14 @@ body{
 	font-size: 12px;
 }	
 #login{
-	padding: 28px 0 0 100px
+	padding: 28px 0 0 100px;
+	color: white;
 }
 #login p{
 	margin-bottom: 0;
+}
+#login a{
+	color: red;
 }
 @media (min-width: 768px) {
 	.navbar-form .input-group .form-control,
@@ -190,7 +194,7 @@ padding-left: 12px;
 	margin-top: 15px;
 }
 #footer-t{
-	background: #FF9600;
+	background: #2dad10;
 	color: #fff;
 	padding: 15px 0 0 0;		
 }
@@ -201,7 +205,7 @@ padding-left: 12px;
 }
 
 #footer-b{
-	background: #FF6700;
+	background: #1e8e04;
 	color: #fff;
 	font-size: 13px;
 	position: relative;
@@ -238,7 +242,7 @@ padding-left: 12px;
 	}	
 	#cart a:last-child{
 		margin-left: 50px;
-		color: #ff6600;
+		color: #1e8e04;
 	}	
 	
 	#menu{

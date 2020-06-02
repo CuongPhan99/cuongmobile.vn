@@ -16,7 +16,7 @@ class McOrderdetail extends Migration
         Schema::create('mc_orderdetail', function (Blueprint $table) {
             $table->integer('od_id')->unsigned();
             $table->integer('prod_id')->unsigned();
-            $table->string('od_quantity');
+            $table->integer('od_quantity');
             $table->integer('od_price');
             $table->foreign('prod_id') 
                   ->references('prod_id')

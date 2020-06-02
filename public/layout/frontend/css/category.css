@@ -8,7 +8,7 @@ body{
 	color: #666;
 }
 #header{
-	background: #FF9600;		
+	background: #1e8e04;		
 }
 #logo, #search, #cart{
 	height: 98px;
@@ -35,7 +35,7 @@ body{
 	background: #fff;
 	padding: 0 15px;
 	border: none;
-	color: #ff9600;
+	color: #1e8e04;
 	font-size: 12px;
 }	
 @media (min-width: 768px) {
@@ -131,13 +131,13 @@ padding-left: 12px;
 #list-cart h3{
 	margin-top: 15px;
 	font-size: 24px;	
-	color: #ff9600;
+	color: #1e8e04;
 	text-transform: uppercase;
 }
 #xac-nhan h3{
 	margin-top: 15px;
 	font-size: 24px;	
-	color: #ff9600;
+	color: #1e8e04;
 	text-transform: uppercase;
 }
 /* table */
@@ -166,7 +166,7 @@ padding-left: 12px;
 	color: red;
 }
 .form-group .btn{
-	background: #ff9600;
+	background: #1e8e04;
 	border-radius: 0px;
 	color: #fff;
 }
@@ -182,7 +182,7 @@ padding-left: 12px;
 	margin-top: 15px;
 }
 #footer-t{
-	background: #FF9600;
+	background: #2dad10;
 	color: #fff;
 	padding: 15px 0 0 0;		
 }
@@ -193,7 +193,7 @@ padding-left: 12px;
 }
 
 #footer-b{
-	background: #FF6700;
+	background: #1e8e04;
 	color: #fff;
 	font-size: 13px;
 	position: relative;
@@ -278,7 +278,7 @@ nav a#pull {
 	nav a#pull {
 		display: block;
 		float: left;
-		/* background-color: #ff9600; */
+		/* background-color: #1e8e04; */
 		/* width: 100%; */
 		position: absolute;
 		top: 50%;
@@ -316,8 +316,8 @@ nav a#pull {
     .my-btn{
 	color: #fff;
 	border-radius: 0px;
-	border-color: #ff9600;
-	background: #ff9600;
+	border-color: #1e8e04;
+	background: #1e8e04;
 }
 .my-btn:last-child{
 	background: #d9534f;
@@ -327,7 +327,7 @@ nav a#pull {
 .products h3{
 	margin-top: 15px;
 	font-size: 22px;
-	color: #ff9600;
+	color: #1e8e04;
 	text-transform: uppercase;
 }
 
@@ -384,22 +384,22 @@ nav a#pull {
 
 .pagination>li>a{
 	border-radius: 0px !important;
-	color: #ff9600;
+	color: #1e8e04;
 }
 /* .pagination>li.active>span{
-	background: #ff9600;
-	border-color: #ff9600;
+	background: #1e8e04;
+	border-color: #1e8e04;
 } */
 /* end pagination */
 
 .btn-danger {
     color: #fff;
-    background-color: #ff9600;
+    background-color: #1e8e04;
     border-color: #fff;
     }
 
     .btn-danger:hover {
     color: #fff;
-    background-color: #ff9600;
+    background-color: #1e8e04;
     border-color: #fff;
 }

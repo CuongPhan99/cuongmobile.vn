@@ -21,17 +21,20 @@ class OrderController extends Controller
     }  
     public function getCheckOrder($id)
     {
+
         $order = Order::find($id);
-        $orderdetail = OrderDetail::where($id);
-        if($orderdetail)
-        {
-            foreach($orderdetail as $order)
-            {
-               $product = Product::find($id);
-               $product->prod_qty = $product->prod_qty - $order->od_quantity;
-               $product->save();
-            }
-        }
+        $orderdetail = DB::select('select * from mc_orderdetail a, mc_products b where a.prod_id=b.prod_id');
+        // dd($orderdetail);
+        // if($orderdetail)
+        // {
+        //     foreach($orderdetail as $order)
+        //     {
+        //        $product = Product::find($id);
+        //     //    dd($product);
+        //        $product->prod_qty = $order->prod_qty - $order->od_quantity;
+        //        $product->save();
+        //     }
+        // }
         $order->or_status = Order::STATUS_DONE;
         $order->save();
         return redirect('admin/order');
