@@ -14,8 +14,11 @@
 					<p><a href="{{asset('detail/'.$item->prod_id.'/'.$item->prod_slug.'.html')}}">Xem chi tiết</a></p>
 				</div>                                    
 			</div>
-			@endforeach
-		</div>                	                	
+			@endforeach			   
+		</div>   
+		<div id="pagination">
+			{{$featured->links()}}
+		</div>         	                	
 	</div>
 
 	<div class="products">

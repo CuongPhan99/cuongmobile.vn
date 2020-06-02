@@ -14,7 +14,7 @@ class FrontendController extends Controller
 {
     //
     public function getHome(){
-        $data['featured']=Product::where('prod_featured',1)->orderBy('prod_id','desc')->take(8)->get();
+        $data['featured']=Product::where('prod_featured',1)->orderBy('prod_id','desc')->paginate(4);
         $data['news'] = Product::orderBy('prod_id','desc')->take(8)->get();
         return view('frontend.home',$data);
 
@@ -26,7 +26,7 @@ class FrontendController extends Controller
     }
     public function getCategory($id){
         $data['cateName'] = Category::find($id);
-        $data['items'] = Product::where('prod_cate',$id)->orderBy('prod_id','desc')->paginate(2);
+        $data['items'] = Product::where('prod_cate',$id)->orderBy('prod_id','desc')->paginate(4);
         return view('frontend.category',$data);
     }
     public function postComment(Request $request,$id){

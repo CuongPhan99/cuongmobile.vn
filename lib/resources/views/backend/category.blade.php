@@ -20,10 +20,10 @@
 								@csrf
 								<div class="form-group">
 									<label>Tên danh mục:</label>
-									<input required type="text" name="name" class="form-control" placeholder="Tên danh mục...">
+									<input  autocomplete="off" required type="text" name="name" class="form-control" placeholder="Tên danh mục...">
 								</div>
 								<div class="form-group">
-									<input type="submit" name="submit" class="form-control btn btn-primary" placeholder="Tên danh mục..." value="Thêm mới">
+									<input  type="submit" name="submit" class="form-control btn btn-primary" placeholder="Tên danh mục..." value="Thêm mới">
 								</div>
 							</form>
 						</div>

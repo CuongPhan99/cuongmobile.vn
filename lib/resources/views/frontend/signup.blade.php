@@ -76,7 +76,7 @@
 		</div>
 	</header><!-- /header -->
   <!-- endheader -->
-  <form role="form" method="post">
+  <form role="form" method="post" autocomplete="off">
     @csrf
     <div class="container">
       <h1>Đăng ký</h1>
@@ -104,10 +104,10 @@
       <input type="text" placeholder="Enter Email" name="email" id="email" required>
   
       <label for="psw"><b>Mật khẩu</b></label>
-      <input type="text" placeholder="Enter Password" name="password" id="psw" required>
+      <input type="password" placeholder="Enter Password" name="password" id="psw" required>
   
       <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
-      <input type="text" placeholder="Repeat Password" name="passwordAgain" id="pswrepeat" required>
+      <input type="password" placeholder="Repeat Password" name="passwordAgain" id="pswrepeat" required>
       <hr>
   
       <p>Bằng cách tạo một tài khoản, bạn đồng ý với <a href="#">Điều khoản & Quyền riêng tư</a> của chúng tôi .</p>
@@ -126,10 +126,7 @@
         <div id="logo-f" class="col-md-3 col-sm-12 col-xs-12 text-center">						
           <a href="{{asset('/')}}"><img src="img/home/logo.png"></a>		
         </div>
-        <div id="about" class="col-md-3 col-sm-12 col-xs-12">
-          <h3>About us</h3>
-          <p class="text-justify">Cuong Academy thành lập năm 2020. </p>
-        </div>
+
         <div id="hotline" class="col-md-3 col-sm-12 col-xs-12">
           <h3>Hotline</h3>
           <p>Phone Sale: 0326896628</p>
@@ -145,11 +142,9 @@
     <div id="footer-b">				
       <div class="container">
         <div class="row">
-          <div id="footer-b-l" class="col-md-6 col-sm-12 col-xs-12 text-center">
-            <p>Học viện Công nghệ CuongPro</p>
-          </div>
+  
           <div id="footer-b-r" class="col-md-6 col-sm-12 col-xs-12 text-center">
-            <p>© 2020 Cuongpro Academy. All Rights Reserved</p>
+            <p>© 2020 Copyright CuongMobile.vn </p>
           </div>
         </div>
       </div>

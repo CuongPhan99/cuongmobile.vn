@@ -15,7 +15,7 @@
 					<div class="panel-heading">Thêm người dùng</div>
 					@include('errors.note')
 					<div class="panel-body">
-						<form method="post" enctype="multipart/form-data">
+						<form method="post" enctype="multipart/form-data" autocomplete="off">
 							@csrf
                             <div class="row" style="margin-bottom:40px">                               
 								<div class="col-xs-8">

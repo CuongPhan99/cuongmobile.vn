@@ -188,10 +188,7 @@
 					<div id="logo-f" class="col-md-3 col-sm-12 col-xs-12 text-center">						
 						<a href="{{asset('/')}}"><img src="img/home/logo.png"></a>		
 					</div>
-					<div id="about" class="col-md-3 col-sm-12 col-xs-12">
-						<h3>About us</h3>
-						<p class="text-justify">Cuong Academy thành lập năm 2020. </p>
-					</div>
+			
 					<div id="hotline" class="col-md-3 col-sm-12 col-xs-12">
 						<h3>Hotline</h3>
 						<p>Phone Sale: 0326896628</p>
@@ -207,11 +204,9 @@
 			<div id="footer-b">				
 				<div class="container">
 					<div class="row">
-						<div id="footer-b-l" class="col-md-6 col-sm-12 col-xs-12 text-center">
-							<p>Học viện Công nghệ CuongPro</p>
-						</div>
+					
 						<div id="footer-b-r" class="col-md-6 col-sm-12 col-xs-12 text-center">
-							<p>© 2020 Cuongpro Academy. All Rights Reserved</p>
+							<p>© 2020 Copyright CuongMobile.vn</p>
 						</div>
 					</div>
 				</div>

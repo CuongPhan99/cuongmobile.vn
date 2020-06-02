@@ -149,6 +149,14 @@ padding-left: 12px;
 	margin: 0;
 }
 
+#pagination{
+	margin: 20px;
+}
+
+.pagination>li>a{
+	border-radius: 0px !important;
+	color: #1e8e04;
+}
 .product-item{
 	border: 1px solid #ddd;
 	text-align: center;
