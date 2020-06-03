@@ -25,7 +25,12 @@ class AddUserRequest extends FormRequest
     {
         return [
             //
-            
+            'email'=>'unique:mc_users,email'
+        ];
+    }
+    public function messages(){
+        return[
+            'email.unique'=>'Email đã được đăng ký!'
         ];
     }
 }

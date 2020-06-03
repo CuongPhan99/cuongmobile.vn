@@ -8,6 +8,7 @@ use App\Models\Category;
 use App\Models\Comment;
 use App\Models\User;
 use Illuminate\Support\Str; 
+use App\Http\Requests\AddUserRequest;
 use Auth;
 
 class FrontendController extends Controller
@@ -68,7 +69,7 @@ class FrontendController extends Controller
     public function getSignUp(){
         return view('frontend.signup');
     }
-    public function postSignUp(Request $request){      
+    public function postSignUp(AddUserRequest $request){      
         
         $user = new User;
         $user->name = $request->name;
