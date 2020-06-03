@@ -20,7 +20,7 @@
 										<tr class="bg-primary">
                                             <th width="5%">ID</th>
                                                                                        
-											<th width="13%">Người đặt hàng</th>
+											<th width="13%">Người nhận hàng</th>
 											<th width="10%">SĐT</th>
                                             <th width="15%">Địa chỉ </th>
 											<th width="23%">Sản phẩm </th>

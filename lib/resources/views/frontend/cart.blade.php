@@ -61,10 +61,10 @@
 
 				<div class="form-group">
 					<label for="email">Email address:</label>
-					<input required type="email" class="form-control" id="email" name="email">
+					<input disabled required type="email" class="form-control" id="email" name="email" placeholder="{{Auth::user()->email}}">
 				</div>
 				<div class="form-group">
-					<label for="name">Họ và tên:</label>
+					<label for="name">Người nhận hàng:</label>
 					<input required type="text" class="form-control" id="name" name="name">
 				</div>
 				<div class="form-group">

@@ -9,6 +9,7 @@ use Mail,Session;
 use App\Models\Order;
 use App\Models\OrderDetail;
 use Illuminate\Support\Collection;
+use Auth;
 class CartController extends Controller
 {
     
@@ -36,12 +37,12 @@ class CartController extends Controller
     public function postComplete(Request $request){
  
          $data['info'] = $request->all();
-         $email = $request->email;
+        //  $email = $request->email;
          $data['cart'] = Cart::content();
          $data['total'] = Cart::total();
 
          $order = new Order;
-         $order->or_email = $request->email;
+         $order->id = Auth::user()->id;
          $order->or_name = $request->name;
          $order->or_phone = $request->phone;
          $order->or_address = $request->add;
@@ -62,12 +63,12 @@ class CartController extends Controller
              }
            
          }
-         Mail::send('frontend.email', $data, function ($message) use ($email) {
-             $message->from('cuonghophan99@gmail.com', 'Manh Cuong');       
-             $message->to($email, $email);
-             //$message->cc('cuonghophan99@gmail.com', 'Mạnh Cường');           
-             $message->subject('Xác nhận hóa đơn mua hàng CuongMobile Shop');
-         });
+        //  Mail::send('frontend.email', $data, function ($message) use ($email) {
+        //      $message->from('cuonghophan99@gmail.com', 'Manh Cuong');       
+        //      $message->to($email, $email);
+        //      //$message->cc('cuonghophan99@gmail.com', 'Mạnh Cường');           
+        //      $message->subject('Xác nhận hóa đơn mua hàng CuongMobile Shop');
+        //  });
          Cart::destroy();
          return redirect('complete');
     }

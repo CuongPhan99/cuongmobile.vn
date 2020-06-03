@@ -15,11 +15,14 @@ class McOrder extends Migration
     {
         Schema::create('mc_order', function (Blueprint $table) {
             $table->increments('or_id');
-            $table->string('or_email');
+            $table->string('id');
             $table->string('or_name');
             $table->Integer('or_phone')->unsigned();
             $table->string('or_address');
             $table->boolean('or_status');
+            $table->foreign('id') 
+                  ->references('id')
+                  ->on('mc_users');
             $table->timestamps();
         });
     }
