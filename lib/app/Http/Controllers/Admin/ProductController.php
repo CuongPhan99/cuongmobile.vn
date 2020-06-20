@@ -8,7 +8,7 @@ use App\Http\Requests\AddProductRequest;
 use App\Models\Product;
 use Illuminate\Support\Str; 
 use App\Models\Category;
-use App\Models\User;
+use App\User;
 use DB;
 class ProductController extends Controller
 {

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\User;
 use Auth;
 
 class LoginController extends Controller
@@ -20,7 +21,7 @@ class LoginController extends Controller
             $remember = false;
         }
 
-        if(Auth::attempt($arr)){
+        if(Auth::attempt($arr,$remember)){
             return redirect()->intended('admin/home');
         }else{
             return back()->withInput()->with('error','Tài khoản hoặc mật khẩu chưa đúng');

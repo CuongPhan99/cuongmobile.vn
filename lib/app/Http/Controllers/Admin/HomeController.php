@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Models\Product;
 use App\Models\Comment;
-use App\Models\User;
+use App\User;
 use App\Models\Order;
 use App\Models\Category;
 

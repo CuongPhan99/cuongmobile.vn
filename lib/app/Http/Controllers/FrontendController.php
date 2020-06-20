@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Category;
 use App\Models\Comment;
-use App\Models\User;
+use App\User;
 use Illuminate\Support\Str; 
 use App\Http\Requests\AddUserRequest;
 use Auth;
@@ -56,7 +56,7 @@ class FrontendController extends Controller
         }else{
             $remember = false;
         }
-        if(Auth::attempt($arr)){
+        if(Auth::attempt($arr,$remember)){
             return redirect()->intended('/');
         }else{
             return back()->withInput()->with('error','Tài khoản hoặc mật khẩu chưa đúng');
