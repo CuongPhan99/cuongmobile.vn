@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="public/layout/frontend/css/email.css">
+<link rel="stylesheet" href="../public/layout/frontend/css/email.css">
 <div id="wrap-inner">
 	<div id="khach-hang">
 		<h3>Thông tin khách hàng</h3>
@@ -6,10 +6,10 @@
 			<span class="info">Khách hàng: </span>
 			{{$info['name']}}
 		</p>
-		<p>
+		{{-- <p>
 			<span class="info">Email: </span>
 			{{$info['email']}}
-		</p>
+		</p> --}}
 		<p>
 			<span class="info">Điện thoại: </span>
 			{{$info['phone']}}

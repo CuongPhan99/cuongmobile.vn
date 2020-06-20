@@ -10,6 +10,7 @@ use App\User;
 use Illuminate\Support\Str; 
 use App\Http\Requests\AddUserRequest;
 use Auth;
+use Cart;
 
 class FrontendController extends Controller
 {
@@ -64,6 +65,7 @@ class FrontendController extends Controller
     }
     public function getLogoutHome(){
         Auth::logout();
+        Cart::destroy();
         return redirect()->intended('/');
     }
     public function getSignUp(){

@@ -17,7 +17,7 @@ class McOrder extends Migration
             $table->increments('or_id');
             $table->string('id');
             $table->string('or_name');
-            $table->Integer('or_phone')->unsigned();
+            $table->string('or_phone');
             $table->string('or_address');
             $table->boolean('or_status');
             $table->foreign('id') 

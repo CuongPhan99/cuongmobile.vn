@@ -37,7 +37,7 @@ class CartController extends Controller
     public function postComplete(Request $request){
  
          $data['info'] = $request->all();
-        //  $email = $request->email;
+         $email = Auth::user()->email;
          $data['cart'] = Cart::content();
          $data['total'] = Cart::total();
 
@@ -63,17 +63,16 @@ class CartController extends Controller
              }
            
          }
-        //  Mail::send('frontend.email', $data, function ($message) use ($email) {
-        //      $message->from('cuonghophan99@gmail.com', 'Manh Cuong');       
-        //      $message->to($email, $email);
-        //      //$message->cc('cuonghophan99@gmail.com', 'Mạnh Cường');           
-        //      $message->subject('Xác nhận hóa đơn mua hàng CuongMobile Shop');
-        //  });
+         Mail::send('frontend.email', $data, function ($message) use ($email) {
+             $message->from('cuonghophan99@gmail.com', 'Manh Cuong');       
+             $message->to($email, $email);
+             //$message->cc('cuonghophan99@gmail.com', 'Mạnh Cường');           
+             $message->subject('Xác nhận hóa đơn mua hàng CuongMobile Shop');
+         });
          Cart::destroy();
          return redirect('complete');
     }
-public function getComplete(){
+    public function getComplete(){
         return view('frontend.complete');
-
     }
 }

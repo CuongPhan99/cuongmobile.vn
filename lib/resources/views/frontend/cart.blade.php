@@ -58,7 +58,7 @@
 
 				<div class="form-group">
 					<label for="email">Email address:</label>
-					<input disabled required type="email" class="form-control" id="email" name="email" placeholder="{{Auth::user()->email}}">
+					<input disabled required type="email" class="form-control" id="email" name="email" value="{{Auth::user()->email}}">
 				</div>
 				<div class="form-group">
 					<label for="name">Người nhận hàng:</label>

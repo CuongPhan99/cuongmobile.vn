@@ -17,7 +17,7 @@ class AddAttributeIntoPostsUsers extends Migration
             //
             $table->string('name');
             $table->string('sex');
-            $table->integer('phone');
+            $table->string('phone');
             $table->string('address');
 
         });
