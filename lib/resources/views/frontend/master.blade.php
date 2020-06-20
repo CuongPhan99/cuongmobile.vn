@@ -112,18 +112,7 @@
 						<div class="banner-l-item">
 							<a href="#"><img src="img/home/banner-l-3.png" alt="" class="img-thumbnail"></a>
 						</div>
-						<div class="banner-l-item">
-							<a href="#"><img src="img/home/banner-l-4.png" alt="" class="img-thumbnail"></a>
-						</div>
-						<div class="banner-l-item">
-							<a href="#"><img src="img/home/banner-l-5.png" alt="" class="img-thumbnail"></a>
-						</div>
-						<div class="banner-l-item">
-							<a href="#"><img src="img/home/banner-l-6.png" alt="" class="img-thumbnail"></a>
-						</div>
-						<div class="banner-l-item">
-							<a href="#"><img src="img/home/banner-l-7.png" alt="" class="img-thumbnail"></a>
-						</div>
+						
 					</div>
 				</div>
 
@@ -163,16 +152,7 @@
 						</div>
 					</div>
 
-					{{-- <div id="banner-t" class="text-center">
-						<div class="row">
-							<div class="banner-t-item col-md-6 col-sm-12 col-xs-12">
-								<a href="#"><img src="img/home/banner-t-1.png" alt="" class="img-thumbnail"></a>
-							</div>
-							<div class="banner-t-item col-md-6 col-sm-12 col-xs-12">
-								<a href="#"><img src="img/home/banner-t-1.png" alt="" class="img-thumbnail"></a>
-							</div>
-						</div>					
-                    </div> --}}
+					
                     @yield('main')
 					<!-- end main -->
 				</div>

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/email.css">
+<link rel="stylesheet" href="public/layout/frontend/css/email.css">
 <div id="wrap-inner">
 	<div id="khach-hang">
 		<h3>Thông tin khách hàng</h3>

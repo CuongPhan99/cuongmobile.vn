@@ -44,12 +44,9 @@
 			</table>
 			<div class="row" id="total-price">
 				<div class="col-md-6 col-sm-12 col-xs-12">										
-				Tổng thanh toán: <span class="total-price">{{$total}}</span>
-																								
+				Tổng thanh toán: <span class="total-price">{{$total}}</span>																								
 				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12">
-					<a href="#" class="my-btn btn">Mua tiếp</a>
-					<a href="#" class="my-btn btn">Cập nhật</a>
+				<div class="col-md-6 col-sm-12 col-xs-12">				
 					<a href="{{asset('cart/delete/all')}}" class="my-btn btn">Xóa giỏ hàng</a>
 				</div>
 			</div>
